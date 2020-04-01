@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/posting-page.css">
+    <title>Posting</title>
+
+</head>
+<body>
+    <div>
+        <img src="img/macbook.jpg" alt="">
+        <div>
+            <ul>
+                <li><a href="">đăng ký</a></li>
+                <li><a href="">đăng nhập</a></li>
+                <li><button value="showtext" onclick="myFunction()">đăng bài</button></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="posting-tab">
+        <span id="close" value='hidetext'>&times;</span>
+        <div id="user-profile">
+            <img src="img/8.png/" alt="Profile Picture" srcset="" id="profile-pic">
+            <p class="label" id="profile-name">username</p><br><br>
+            <hr width="98%">
+        </div>
+        <div id="title">
+            <p class="label">Tiêu đề <span style="color: red;">*</span></p>
+            <input type="text" name="title" id="title-input">
+        </div>
+        <div id="content">
+            <p class="label">Nội dung <span style="color: red;">*</span></p>
+            <textarea id="content-input" rows="9" cols="100"></textarea>
+        </div>
+        <div id="image">
+            <p class="label">Ảnh bài viết <span style="color: red;">*</span></p>
+            <button id="up-image-btn">
+                <img src="img/camera-icon.png/" alt="Camera icon" srcset="" width="10%"> 
+                <br>Tải ảnh lên
+            </button>
+        </div>
+        <hr width="98%">
+        <div id="post">
+            <center><input type="button" value="Đăng bài" id="post-btn"></center>
+        </div>
+    </div>
+    <div id="text-area">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, quas, dolore. Accusamus, vel, ab. Cumque, aliquid, ad! Sapiente repudiandae, quo sit temporibus necessitatibus, sint obcaecati illo, modi officia, consequatur placeat tempora ullam corporis facilis provident omnis laborum? Officiis molestias nesciunt fuga modi error, tempore voluptates corrupti aspernatur, voluptate quasi quia. Minus alias, dolor in suscipit, voluptatibus nostrum mollitia assumenda eum illum explicabo modi non, eaque officiis ducimus quis impedit blanditiis velit! Veniam facere voluptatibus id, porro nemo, rerum rem itaque dignissimos totam consectetur exercitationem quae aperiam beatae aut non expedita aliquam fuga dolores ducimus. Ut, quis necessitatibus hic quae unde a quaerat, minima! Reiciendis est eius fugit ipsum facilis dicta ipsam ad soluta possimus ut eveniet corporis voluptatibus, dolorum, voluptates, nisi architecto optio error? Nobis obcaecati unde totam, repellendus similique fugit deserunt necessitatibus animi. Sit, amet? Deleniti maxime dolorem, magni pariatur eum reiciendis soluta voluptatibus ab aspernatur excepturi laboriosam impedit aperiam a nobis facere, dolorum corporis laborum natus qui veniam officia. Nesciunt fugiat odit harum consequuntur fuga, impedit ipsam reiciendis, praesentium ipsa quae debitis fugit ratione, consectetur eligendi optio nisi nulla maiores atque. Laboriosam recusandae quasi facere reiciendis! Autem obcaecati ipsam accusamus sed impedit hic a quo aperiam, est minima consectetur magnam, sunt mollitia quia perspiciatis, soluta delectus doloribus suscipit. Amet possimus, dolorem magnam adipisci reiciendis dignissimos, corrupti neque expedita distinctio laudantium placeat quae quisquam esse ipsa voluptatem harum. Excepturi explicabo temporibus voluptate provident deleniti, cumque qui aperiam iusto at voluptatum accusantium magni voluptas consequatur quam harum maiores? Neque, animi blanditiis sed a quasi dolore, voluptates reiciendis, quo ipsam veniam inventore et placeat praesentium laudantium! Quaerat natus illum eum fugiat eius eos ab, aspernatur aut velit dolore quos, pariatur facere eligendi temporibus qui possimus! Deserunt ipsa nulla quisquam ad itaque cumque voluptatem quam, officia facilis qui fugit corporis, veniam magni eum aperiam! Ea nobis beatae iusto qui tenetur porro corrupti similique esse tempora ducimus quo consequatur, exercitationem. Eaque non inventore autem laboriosam sed vitae necessitatibus quod perspiciatis natus voluptates quibusdam placeat, cumque a, tenetur nam est pariatur voluptatum laborum quisquam eius, fuga iste maxime. Officiis commodi similique tempora molestias voluptatem cumque placeat! Dolorem doloribus odit laudantium minima magni! Eligendi consequuntur fuga magnam non est officiis harum assumenda voluptatem nemo id facilis asperiores, magni labore, aspernatur quos, doloribus consequatur totam obcaecati incidunt quae minus recusandae. Ratione, officiis, ipsum. Autem hic facere quidem, vel, nulla blanditiis sit quo dolorem veritatis dolorum aperiam enim ipsam adipisci voluptatum accusamus explicabo animi doloremque consequuntur molestias modi optio perspiciatis veniam! Sit ipsum illum, voluptate itaque? Ea nemo amet labore delectus beatae eos obcaecati repellat, assumenda earum possimus et nesciunt quisquam nihil recusandae facere consectetur aliquid, corporis, iure suscipit voluptatum doloremque molestias iste nisi voluptas accusantium! Nihil atque delectus laudantium consequatur dolor incidunt ullam iste ratione eius doloremque sunt nemo soluta minima autem dolores adipisci, assumenda quidem quam ipsum perferendis laborum libero architecto accusantium. Veritatis molestiae iste possimus facilis quia qui, nemo tempora nihil aut officia. Voluptatum voluptatibus consectetur dolores hic, minima eligendi! Porro eum voluptatem, labore.</p>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <script>
+        // $(document).ready(function(){
+        //     $("button[value='showtext']").click(function(){
+        //         $("#posting-tab").show("fast");
+        //         // $("#text-area").css("display","none");
+        //         $("#text-area").hide("fast");
+        //     })
+        //     $("span[value='hidetext']").click(function(){
+        //         $("#posting-tab").hide("fast");
+        //         $('#text-area').show("fast");
+        //     })
+        // })
+
+        // $(document).ready(function(){
+        //     $("button[value='showtext']").click(function(){
+        //         for (var i = 1; i < 1000; i++) {
+        //             if (i%2==0) {
+        //                 $("#posting-tab").show("fast");
+        //                 // $("#text-area").css("display","none");
+        //                 $("#text-area").hide("fast");
+        //             }
+        //             else {
+        //                 $("#posting-tab").hide("fast");
+        //                 $('#text-area').show("fast");
+        //             }
+        //         }
+        //     })
+            
+        // })
+function myFunction() {
+  var x = document.getElementById("posting-tab");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+       
+    </script>
+</body>
+</html>
