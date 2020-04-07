@@ -9,7 +9,7 @@
   	<link rel="stylesheet" href="css/fontawesome.min.js">
   	<link rel="stylesheet" href="css/solid.js">
     <link rel="stylesheet" href="css/posting-page.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/slide.css">
     <link rel="stylesheet" type="text/css" href="css/style-nav-bar.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
@@ -18,14 +18,14 @@
 
 </head>
 <body>
-	<div class="khoi-slide">
-        <div class="cac-slide">
+	<div class="block-slide">
+        <div class="any-slide">
             <div class="slide active"><img class="width100" src="img/1.png" alt=""></div>
             <div class="slide"><img class="width100" src="img/2.png" alt=""></div>
             <div class="slide"><img class="width100" src="img/3.png" alt=""></div>
             <div class="slide"><img class="width100" src="img/4.png" alt=""></div>
         </div>
-        <div class="nut-slide">
+        <div class="button-slide">
             <span id="btn-prev"><i class="fas fa-chevron-left"></i></span>
             <span id="btn-next"><i class="fas fa-chevron-right"></i></span>
             <ul>
@@ -40,7 +40,7 @@
     <div class="top-page">
         <div class="navigation-bar">
                 <ul class="bg-nav-bar">
-                    <li><a value="showtext">Đăng bài</a></li>
+                    <li><a href="#posting-tab" value="showtext">Đăng bài</a></li>
                     <li><a href="">Đăng nhập</a></li>
                     <li><a href="">Đăng ký</a></li>             
                 </ul>
@@ -61,7 +61,7 @@
                 <input type="text" id="search-bar" placeholder="Bạn muốn tìm gì?">
                 <a href="#">
 
-                    <img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png">
+                    <img class="search-icon" src="img/search-icon.png">
                 </a>
             </form>
         </div>
@@ -95,7 +95,7 @@
         <br>
     </div>
 
-    <a id="button"></a>
+    <a id="button"><i class="fas fa-angle-up"></i></a>
 
     <div id="list-cate" class="container">
   
@@ -217,7 +217,7 @@
 	<script src="js/back-to-top.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/slide.js"></script>
     <script>
         $(document).ready(function(){
             $("a[value='showtext']").click(function(){
@@ -232,19 +232,5 @@
         })
     </script>
 
-<!-- <script>
-    $(document).ready(function(){
-		$("a[value='showtext']").click(function(){
-            $("#abc").show("fast");
-    		// $("#text-area").css("display","none");
-            $("text-area").hide("fast");
-        })
-      	$("button[value='hidetext']").click(function(){
-            $("#abc").hide("fast");
-            $('text-area').show("fast");
-        })
-    })
-</script> -->
-<!-- <script src="js/post-test/js"></script> -->
 </body>
 </html>
