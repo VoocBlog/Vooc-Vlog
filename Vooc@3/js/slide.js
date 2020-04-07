@@ -16,8 +16,8 @@ $(document).ready(function() {
 				$('.di-vao-ben-phai').removeClass('di-vao-ben-phai')
 			});;
 			// xử lý nút
-			$('.nut-slide ul li').removeClass('active-nut');
-			$('.nut-slide ul li:nth-child('+(vi_tri_hien_tai+1)+')').addClass('active-nut');
+			$('.button-slide ul li').removeClass('active-nut');
+			$('.button-slide ul li:nth-child('+(vi_tri_hien_tai+1)+')').addClass('active-nut');
 		} else {
 			$('.active').addClass('bien-mat-ben-trai').one('webkitAnimationEnd', function(event) {
 				$('.bien-mat-ben-trai').removeClass('bien-mat-ben-trai').removeClass('active')
@@ -26,8 +26,8 @@ $(document).ready(function() {
 				$('.di-vao-ben-phai').removeClass('di-vao-ben-phai')
 			});;
 			// xử lý nút
-			$('.nut-slide ul li').removeClass('active-nut');
-			$('.nut-slide ul li:nth-child(1)').addClass('active-nut');
+			$('.button-slide ul li').removeClass('active-nut');
+			$('.button-slide ul li:nth-child(1)').addClass('active-nut');
 		}
 	});
 	$('#btn-prev').click(function(event) {
@@ -42,8 +42,8 @@ $(document).ready(function() {
 				$('.di-vao-ben-trai').removeClass('di-vao-ben-trai');
 			});;
 			// xử lý nút
-			$('.nut-slide ul li').removeClass('active-nut');
-			$('.nut-slide ul li:nth-child('+(vi_tri_hien_tai-1)+')').addClass('active-nut');
+			$('.button-slide ul li').removeClass('active-nut');
+			$('.button-slide ul li:nth-child('+(vi_tri_hien_tai-1)+')').addClass('active-nut');
 		} else {
 			$('.active').addClass('bien-mat-ben-phai').one('webkitAnimationEnd', function(event) {
 				$('.bien-mat-ben-phai').removeClass('bien-mat-ben-phai').removeClass('active');
@@ -52,16 +52,16 @@ $(document).ready(function() {
 				$('.di-vao-ben-trai').removeClass('di-vao-ben-trai');
 			});;
 			// xử lý nút
-			$('.nut-slide ul li').removeClass('active-nut');
-			$('.nut-slide ul li:last-child').addClass('active-nut');
+			$('.button-slide ul li').removeClass('active-nut');
+			$('.button-slide ul li:last-child').addClass('active-nut');
 		
 		}
 	});
 
-	// $('nut-slide ul li').click(function(event) {
+	// $('button-slide ul li').click(function(event) {
 	// 	var vi_tri_hien_tai = $('.active-nut').index()+1;
 	// 	var vi_tri_click = $(this).index()+1;
-	// 	$('.nut-slide ul li').removeClass('active-nut');
+	// 	$('.button-slide ul li').removeClass('active-nut');
 	// 	$(this).removeClass('active-nut');
 	// 		$('.active').addClass('bien-mat-ben-trai').one('webkitAnimationEnd', function(event) {
 	// 			$('.bien-mat-ben-trai').removeClass('bien-mat-ben-trai').removeClass('active')
@@ -71,10 +71,10 @@ $(document).ready(function() {
 	// 		});;
 	// });;
 
-	$('.nut-slide ul li').click(function(event) {
+	$('.button-slide ul li').click(function(event) {
 		var vi_tri_hien_tai = $('.active-nut').index()+1;
 		var vi_tri_click = $(this).index()+1;
-		$('.nut-slide ul li').removeClass('active-nut');
+		$('.button-slide ul li').removeClass('active-nut');
 		$(this).addClass('active-nut');
 		if(vi_tri_click>vi_tri_hien_tai){
 			$('.active').addClass('bien-mat-ben-trai').one('webkitAnimationEnd', function(event) {

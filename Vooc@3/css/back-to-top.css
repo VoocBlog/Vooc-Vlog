@@ -16,8 +16,8 @@
   transform: rotate(-10deg);
 }
 #button::after {
-  content: "\f077";
-  font-family: "Font Awesome 5 Free";
+ /* content: "\f077";
+  font-family: "Font Awesome 5 Free";*/
   font-weight: normal;
   font-style: normal;
   font-size: 2em;
@@ -34,4 +34,10 @@
 #button.show {
   opacity: 1;
   visibility: visible;
+}
+
+a#button i {
+  padding-top: 9px;
+  font-size: 32px;
+  color: white;
 }
